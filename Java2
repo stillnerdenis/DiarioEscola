@@ -1,0 +1,5 @@
+var numero = '5(1)9-876-543-21';
+
+var numero_novo = (numero[1])+(numero[0])+(numero[2])+(numero[3])+'_'+(numero[4])+'_'+(numero[6])+(numero[7])+(numero[8])+(numero[10])+(numero[9])+(numero[11])+(numero[12])+(numero[14])+(numero[15])
+
+console.log(numero_novo);
