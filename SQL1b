@@ -1,0 +1,2 @@
+INSERT INTO Resposável SET Id = 2, Nome = 'Brenda';
+INSERT INTO Parentesco SET IdResponsavel = 2, IdAluno = 1, Parentesco = 'Mãe';
