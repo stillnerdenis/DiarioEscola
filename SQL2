@@ -1,0 +1,3 @@
+SELECT aluno.Nome, responsavel.Nome, parentesco.Parentesco,responsavel.Nome, parentesco.Parentesco
+FROM parentesco inner join aluno on  parentesco.IdAluno = aluno.Id Inner Join responsavel on parentesco.IdResponsavel = responsavel.Id
+group by parentesco.IdAluno
