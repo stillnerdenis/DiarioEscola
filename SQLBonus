@@ -1,0 +1,4 @@
+SELECT Aluno.Id, Aluno.Nome, Responsável.Id, Responsável.Nome, Parentesco.IdResponsavel, 
+Parentesco.IdAluno, Parentesco.Parentesco From (Aluno INNER JOIN Parentesco ON Aluno.id = 
+Parentesco.IdAluno) INNER JOIN Responsável ON Parentesco.IdResponsavel = Responsável.Id 
+Order By Aluno.Nome;
