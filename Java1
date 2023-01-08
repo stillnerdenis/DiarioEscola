@@ -1,0 +1,97 @@
+var clientes = [
+    {
+    id: 1,
+    nome: 'Luis Santos Silveira',
+    idade: 18
+    },
+    {
+    id: 2,
+    nome: 'Ricardo Lopes Alves',
+    idade: 30
+    },
+    {
+    id: 3,
+    nome: 'Gustavo Silva Junior',
+    idade: 26
+    }
+];
+
+novo_nome = '';
+
+nome1 = '';
+nome2 = '';
+nome3 = '';
+
+//começa o loop para pegar todos nomes da array
+for (var i = 1; i <= 3; i++) {
+    x = i-1
+    if (x == 0) {
+        novo_nome = clientes[x].nome;
+
+        //pegando a primeira parte do Nome
+        const [, match] = novo_nome.match(/(\S+) /) || [];
+        nome1 = match;
+        tamanhonome1 = nome1.length + 1; 
+        novo_nome2 = novo_nome.slice(tamanhonome1);
+        //console.log(nome1);
+
+        //pegando a segunda parte do Nome
+        const [, match2] = novo_nome2.match(/(\S+) /) || [];
+        nome2 = match2;
+        tamanhonome2 = nome2.length + 1; 
+        nome3 = novo_nome2.slice(tamanhonome2);
+        //console.log(nome2);
+
+        //pegando a terceira parte do Nome
+        //console.log(nome3);
+
+        console.log(nome3 + " " + nome1 + " " + nome2)
+        
+    }
+    else if (x == 1) {
+        novo_nome = clientes[x].nome;
+        //pegando a primeira parte do Nome
+        const [, match] = novo_nome.match(/(\S+) /) || [];
+        nome1 = match;
+        tamanhonome1 = nome1.length + 1; 
+        novo_nome2 = novo_nome.slice(tamanhonome1);
+        //console.log(nome1);
+
+        //pegando a segunda parte do Nome
+        const [, match2] = novo_nome2.match(/(\S+) /) || [];
+        nome2 = match2;
+        tamanhonome2 = nome2.length + 1; 
+        nome3 = novo_nome2.slice(tamanhonome2);
+        //console.log(nome2);
+
+        //pegando a terceira parte do Nome
+        //console.log(nome3);
+
+        console.log(nome3 + " " + nome1 + " " + nome2)
+        
+    }
+    else if (x == 2)  {
+        novo_nome = clientes[x].nome;
+
+        //pegando a primeira parte do Nome
+        const [, match] = novo_nome.match(/(\S+) /) || [];
+        nome1 = match;
+        tamanhonome1 = nome1.length + 1; 
+        novo_nome2 = novo_nome.slice(tamanhonome1);
+        //console.log(nome1);
+
+        //pegando a segunda parte do Nome
+        const [, match2] = novo_nome2.match(/(\S+) /) || [];
+        nome2 = match2;
+        tamanhonome2 = nome2.length + 1; 
+        nome3 = novo_nome2.slice(tamanhonome2);
+        //console.log(nome2);
+
+        //pegando a terceira parte do Nome
+        //console.log(nome3);
+
+        console.log(nome3 + " " + nome1 + " " + nome2)
+        
+    };
+
+};
